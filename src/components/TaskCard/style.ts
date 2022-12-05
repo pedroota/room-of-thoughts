@@ -19,6 +19,10 @@ export const Container = styled.div<ITaskCardStyledProps>`
 			padding: ${isTaskOpen ? '1.25rem 0.875rem 0.875rem 0.75rem' : '0'};
 		}
 	`}
+
+	& + & {
+		margin-top: 0.6rem;
+	}
 `;
 
 export const TitleTask = styled.p`
