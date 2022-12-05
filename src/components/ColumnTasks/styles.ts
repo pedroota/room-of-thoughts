@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	min-width: 18.75rem;
-	min-height: 340px;
+	min-width: 21rem;
+	min-height: 21.6rem;
 	display: flex;
 	flex-direction: column;
 	padding: 2rem 1.75rem 0 1.75rem;
@@ -22,7 +22,7 @@ export const HeadColumnTasks = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 0.1rem;
-	
+
 	> div {
 		display: inherit;
 		gap: 0.5rem;
@@ -39,5 +39,19 @@ export const HeadColumnTasks = styled.div`
 		font-size: 2.25rem;
 		line-height: 3.06rem;
 		font-family: 'Recoleta', sans-serif;
+	}
+`;
+
+export const ScrollTasks = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+	max-height: 13.75rem;
+	min-height: 13rem;
+	overflow-y: scroll;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
 	}
 `;

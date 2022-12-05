@@ -1,9 +1,6 @@
-export interface Task {
+export interface ITask {
 	id: string;
+	status: 'to-do' | 'in-progress' | 'done';
 	title: string;
 	description: string;
-	status: 'to-do' | 'in-progress' | 'done';
-	createdAt?: string;
-	updatedAt?: string;
-	userId: string;
 }
